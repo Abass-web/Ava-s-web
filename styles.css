@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    margin: 0;
+}
+
+.glow-button {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, #ff00ff, #ff6600);
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.glow-button:hover {
+    background: linear-gradient(45deg, #ff6600, #ff00ff);
+    box-shadow: 0 0 20px #ff6600, 0 0 60px #ff6600, 0 0 100px #ff6600;
+}
+
+.glow-button:active {
+    transform: scale(0.95);
+}
